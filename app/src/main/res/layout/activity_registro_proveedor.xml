@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F1F8FF"
+    tools:context=".Registro_Proveedor">
+
+    <EditText
+        android:id="@+id/nombreproveedor_txt"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="49dp"
+        android:layout_marginTop="23dp"
+        android:layout_marginEnd="49dp"
+        android:layout_marginBottom="24dp"
+        android:ems="10"
+        android:hint="Nombre:"
+        android:inputType="text"
+        app:layout_constraintBottom_toTopOf="@+id/telefonoproveedor_txt"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/img_logo2"
+        app:layout_constraintVertical_bias="0.538" />
+
+    <TextView
+        android:id="@+id/titulo_tv5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:breakStrategy="balanced"
+        android:fontFamily="sans-serif-black"
+        android:text="  REGISTRO \nPROVEEDOR"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/correoproveedor_txt"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="49dp"
+        android:layout_marginTop="92dp"
+        android:layout_marginEnd="49dp"
+        android:layout_marginBottom="92dp"
+        android:ems="10"
+        android:hint="Correo:"
+        android:inputType="text"
+        app:layout_constraintBottom_toTopOf="@+id/direccionproveedor_txt"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/nombreproveedor_txt" />
+
+    <EditText
+        android:id="@+id/contraseñaproveedor_txt"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="49dp"
+        android:layout_marginTop="71dp"
+        android:layout_marginEnd="49dp"
+        android:layout_marginBottom="69dp"
+        android:ems="10"
+        android:hint="Contraseña:"
+        android:inputType="text"
+        app:layout_constraintBottom_toBottomOf="@+id/direccionproveedor_txt"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/correoproveedor_txt" />
+
+    <EditText
+        android:id="@+id/direccionproveedor_txt"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="49dp"
+        android:layout_marginTop="160dp"
+        android:layout_marginEnd="49dp"
+        android:layout_marginBottom="160dp"
+        android:ems="10"
+        android:hint="Direccion:"
+        android:inputType="text"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/telefonoproveedor_txt" />
+
+    <EditText
+        android:id="@+id/nombreservicio_txt"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="49dp"
+        android:layout_marginTop="67dp"
+        android:layout_marginEnd="49dp"
+        android:layout_marginBottom="65dp"
+        android:ems="10"
+        android:hint="Nombre del servicio:"
+        android:inputType="text"
+        app:layout_constraintBottom_toBottomOf="@+id/registroprove_btn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/direccionproveedor_txt" />
+
+    <EditText
+        android:id="@+id/telefonoproveedor_txt"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="49dp"
+        android:layout_marginEnd="49dp"
+        android:ems="10"
+        android:hint="Telefono:"
+        android:inputType="text"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/img_logo2"
+        android:layout_width="0dp"
+        android:layout_height="128dp"
+        android:layout_marginStart="52dp"
+        android:layout_marginTop="144dp"
+        android:layout_marginEnd="52dp"
+        android:layout_marginBottom="145dp"
+        app:layout_constraintBottom_toBottomOf="@+id/telefonoproveedor_txt"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/mano_amiga" />
+
+    <ImageButton
+        android:id="@+id/volver"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="40dp"
+        android:backgroundTint="#F1F8FF"
+        android:contentDescription="Descripción de la imagen o función del botón"
+        android:onClick="volver_"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@android:drawable/ic_menu_revert"
+        app:tint="#000000" />
+
+    <Button
+        android:id="@+id/registroprove_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="28dp"
+        android:onClick="pv_registrar"
+        android:text="Registrar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F1F8FF"
+    android:backgroundTint="#F1F8FF"
+    tools:context=".Sele_Registro">
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="351dp"
+        android:layout_height="106dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginEnd="28dp"
+        android:layout_marginBottom="19dp"
+        app:layout_constraintBottom_toTopOf="@+id/titulo_tv3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/titulo_tv2"
+        app:srcCompat="@drawable/mano_amiga" />
+
+    <TextView
+        android:id="@+id/titulo_tv2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="72dp"
+        android:layout_marginBottom="32dp"
+        android:breakStrategy="balanced"
+        android:fontFamily="sans-serif-black"
+        android:text="MANO AMIGA"
+        android:textSize="38sp"
+        app:layout_constraintBottom_toTopOf="@+id/imageView3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/titulo_tv3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="4dp"
+        android:breakStrategy="balanced"
+        android:fontFamily="sans-serif-black"
+        android:text="REGISTRO"
+        android:textSize="38sp"
+        app:layout_constraintBottom_toTopOf="@+id/pv_btn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView3" />
+
+    <Button
+        android:id="@+id/inicio_button"
+        android:layout_width="267dp"
+        android:layout_height="58dp"
+        android:layout_marginStart="61dp"
+        android:layout_marginEnd="61dp"
+        android:layout_marginBottom="94dp"
+        android:onClick="inicio"
+        android:text="Iniciar Sesion"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cliente_button" />
+
+    <Button
+        android:id="@+id/pv_btn"
+        android:layout_width="365dp"
+        android:layout_height="92dp"
+        android:layout_weight="1"
+        android:onClick="proveedor"
+        android:text="PROVEEDOR"
+        android:textSize="34sp"
+        android:visibility="visible"
+        app:layout_constraintBottom_toTopOf="@+id/cliente_button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/titulo_tv3" />
+
+    <Button
+        android:id="@+id/cliente_button"
+        android:layout_width="365dp"
+        android:layout_height="92dp"
+        android:layout_marginBottom="26dp"
+        android:layout_weight="1"
+        android:onClick="cliente"
+        android:text="CLIENTE"
+        android:textSize="34sp"
+        android:visibility="visible"
+        app:layout_constraintBottom_toTopOf="@+id/inicio_button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/pv_btn" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
