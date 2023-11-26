@@ -12,26 +12,75 @@
         android:label="@string/app_name"
         android:roundIcon="@drawable/mano_amiga"
         android:supportsRtl="true"
-        android:theme="@style/Theme.ManoAmiga"
+        android:theme="@style/Theme.Material3.Light"
         tools:targetApi="31">
         <activity
-            android:name=".MainMenu"
+            android:name=".ChatsWindowPve"
             android:exported="false" />
+        <activity
+            android:name=".ChatsWindowCte"
+            android:exported="false" />
+        <activity
+            android:name=".ChatPv"
+            android:exported="false" />
+        <activity
+            android:name=".Chat"
+            android:exported="false" />
+        <activity
+            android:name=".Nosotros"
+            android:exported="false" />
+        <activity
+            android:name=".Detalles_ct"
+            android:exported="false" />
+        <activity
+            android:name=".Solicitudes"
+            android:exported="false" />
+        <activity
+            android:name=".Favoritos"
+            android:exported="false" />
+        <activity
+            android:name=".reservasCt"
+            android:exported="false" />
+        <activity
+            android:name=".Detalles_sv"
+            android:exported="false" />
+        <activity
+            android:name=".Ajustes_pv"
+            android:exported="false" />
+        <activity
+            android:name=".MainMenuPv"
+            android:exported="false" />
+        <activity
+            android:name=".Settings"
+            android:exported="false" />
+        <activity
+            android:name=".BuscarServicios"
+            android:exported="false"
+            android:theme="@style/Theme.Material3.Light.NoActionBar" />
+        <activity
+            android:name=".MainMenu"
+            android:exported="false"
+            android:theme="@style/Theme.Material3.Light.NoActionBar" />
         <activity
             android:name=".Registro_Detalles"
-            android:exported="false" />
+            android:exported="false"
+            android:theme="@style/Theme.Material3.Light.NoActionBar" />
         <activity
             android:name=".Registro_Proveedor"
-            android:exported="false" />
+            android:exported="false"
+            android:theme="@style/Theme.Material3.Light.NoActionBar" />
         <activity
             android:name=".Registro_Cliente"
-            android:exported="false" />
+            android:exported="false"
+            android:theme="@style/Theme.Material3.Light.NoActionBar" />
         <activity
             android:name=".Sele_Registro"
-            android:exported="false" />
+            android:exported="false"
+            android:theme="@style/Theme.Material3.Light.NoActionBar" />
         <activity
             android:name=".Inicio"
-            android:exported="true">
+            android:exported="true"
+            android:theme="@style/Theme.Material3.Light.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Detalles_sv"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="10dp">
+
+
+    <TextView
+        android:id="@+id/textViewNombreServicio"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nombre Servicio"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:textColor="#333333"
+        android:layout_gravity="center"
+        android:layout_marginBottom="16dp"
+        android:layout_marginTop="40dp"/>
+
+    <TextView
+        android:id="@+id/textViewDescripcion"
+        android:layout_width="match_parent"
+        android:layout_height="439dp"
+        android:layout_marginBottom="40dp"
+        android:layout_weight="1"
+        android:background="#EEEEEE"
+        android:gravity="top"
+        android:hint="Ingrese texto largo"
+        android:textColor="#333333" />
+
+    <TextView
+    android:id="@+id/textViewPrecio"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#EEEEEE"
+    android:textColor="#333333"
+    android:layout_marginBottom="16dp" />
+
+    <Button
+        android:id="@+id/btnMensaje"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:onClick="mensaje"
+        android:text="Enviar Mensaje"
+        android:textColor="#FFFFFF" />
+
+    <Button
+        android:id="@+id/btnReservar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:onClick="reserva"
+        android:text="Reservar"
+        android:textColor="#FFFFFF" />
+
+    <Button
+        android:id="@+id/btnQuitarReserva"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:onClick="quitar_reserva"
+        android:text="Quitar Reserva"
+        android:textColor="#FFFFFF" />
+
+    <Button
+        android:id="@+id/btnMeGusta"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="megusta"
+        android:text="Me gusta"
+        android:textColor="#FFFFFF"
+        />
+
+    <Button
+        android:id="@+id/btnQuitarMeGusta"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="quitar_megusta"
+        android:text="Quitar Me gusta"
+        android:textColor="#FFFFFF"
+        android:layout_marginBottom="40dp"/>
+
+</LinearLayout>

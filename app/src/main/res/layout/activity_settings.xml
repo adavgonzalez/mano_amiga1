@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    tools:context=".Settings"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/titulo_tv7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="80dp"
+        android:breakStrategy="balanced"
+        android:fontFamily="sans-serif-black"
+        android:text="AJUSTES"
+        android:textSize="38sp" />
+
+    <TextView
+        android:id="@+id/id"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:breakStrategy="balanced"
+        android:fontFamily="sans-serif"
+        android:text="ID:"
+        android:textSize="24sp"
+        android:layout_marginBottom="24dp" />
+
+    <TextView
+        android:id="@+id/nombre_clte"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:breakStrategy="balanced"
+        android:fontFamily="sans-serif"
+        android:text="Nombre:"
+        android:textSize="24sp"
+        android:layout_marginBottom="24dp" />
+
+    <TextView
+        android:id="@+id/apellido_clte"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:breakStrategy="balanced"
+        android:fontFamily="sans-serif"
+        android:text="Apellido:"
+        android:textSize="24sp"
+        android:layout_marginBottom="24dp" />
+
+    <Button
+        android:id="@+id/logout_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="logout"
+        android:text="Cerrar Sesión"
+        android:layout_marginTop="24dp"
+        android:layout_marginBottom="24dp" />
+
+</LinearLayout>
+
+

@@ -8,8 +8,10 @@
     android:backgroundTint="#F1F8FF"
     tools:context=".Inicio">
 
+
+
     <EditText
-        android:id="@+id/contra_txt"
+        android:id="@+id/contra"
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:layout_marginStart="25dp"
@@ -21,7 +23,7 @@
         app:layout_constraintBottom_toTopOf="@+id/iniciar_txt"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/correo_txt" />
+        app:layout_constraintTop_toBottomOf="@+id/correo" />
 
     <Button
         android:id="@+id/iniciar_txt"
@@ -33,9 +35,9 @@
         android:onClick="inicio"
         android:text="Iniciar Sesion"
         app:layout_constraintBottom_toTopOf="@+id/registro_txt"
-        app:layout_constraintEnd_toEndOf="@+id/contra_txt"
-        app:layout_constraintStart_toStartOf="@+id/correo_txt"
-        app:layout_constraintTop_toBottomOf="@+id/contra_txt" />
+        app:layout_constraintEnd_toEndOf="@+id/contra"
+        app:layout_constraintStart_toStartOf="@+id/correo"
+        app:layout_constraintTop_toBottomOf="@+id/contra" />
 
     <TextView
         android:id="@+id/titulo_tv"
@@ -61,7 +63,7 @@
         android:layout_marginStart="57dp"
         android:layout_marginEnd="57dp"
         android:layout_marginBottom="16dp"
-        app:layout_constraintBottom_toTopOf="@+id/correo_txt"
+        app:layout_constraintBottom_toTopOf="@+id/correo"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
@@ -83,7 +85,7 @@
         app:layout_constraintTop_toBottomOf="@+id/iniciar_txt" />
 
     <EditText
-        android:id="@+id/correo_txt"
+        android:id="@+id/correo"
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:layout_marginStart="22dp"
@@ -91,7 +93,7 @@
         android:ems="10"
         android:hint="Ingrese su correo"
         android:inputType="textEmailAddress"
-        app:layout_constraintBottom_toTopOf="@+id/contra_txt"
+        app:layout_constraintBottom_toTopOf="@+id/contra"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView" />

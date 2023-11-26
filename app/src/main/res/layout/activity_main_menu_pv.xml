@@ -4,8 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#F1F8FF"
-    tools:context=".MainMenu">
+    tools:context=".MainMenuPv">
 
     <TextView
         android:id="@+id/titulo_tv7"
@@ -50,7 +49,7 @@
             android:layout_weight="1">
 
             <ImageButton
-                android:id="@+id/servicio_btn"
+                android:id="@+id/solicitud_btn"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="30dp"
@@ -59,19 +58,19 @@
                 android:contentDescription="Hola"
                 android:onClick="busqueda"
                 android:scaleType="centerInside"
-                android:src="@drawable/services" />
+                android:src="@drawable/solicitudes" />
 
             <ImageButton
-                android:id="@+id/reservas"
+                android:id="@+id/mensajes_btn"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="30dp"
                 android:layout_weight="1"
                 android:backgroundTint="#55BEB2"
                 android:contentDescription="Hola"
-                android:onClick="reservas"
+                android:onClick="escribir"
                 android:scaleType="centerInside"
-                android:src="@drawable/reservas" />
+                android:src="@drawable/mensajes" />
         </TableRow>
 
         <TableRow
@@ -87,44 +86,14 @@
                 android:layout_weight="1"
                 android:backgroundTint="#55BEB2"
                 android:contentDescription="Hola"
-                android:scaleType="centerInside"
-                android:onClick="favoritos"
-                android:src="@drawable/favoritos" />
-
-            <ImageButton
-                android:id="@+id/mensajes_btn"
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:layout_margin="30dp"
-                android:layout_weight="1"
-                android:backgroundTint="#55BEB2"
-                android:contentDescription="Hola"
-                android:onClick="misChats"
-                android:scaleType="centerInside"
-                android:src="@drawable/mensajes" />
-        </TableRow>
-
-        <TableRow
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_weight="1">
-
-            <ImageButton
-                android:id="@+id/imageButton3"
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:layout_margin="30dp"
-                android:layout_weight="1"
-                android:backgroundTint="#55BEB2"
-                android:contentDescription="Hola"
                 android:onClick="nosotros"
                 android:scaleType="centerInside"
                 android:src="@drawable/nosotros" />
 
             <ImageButton
                 android:id="@+id/ajustes_btn"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
                 android:layout_margin="30dp"
                 android:layout_weight="1"
                 android:backgroundTint="#55BEB2"
@@ -133,6 +102,7 @@
                 android:scaleType="centerInside"
                 android:src="@drawable/ajustes" />
         </TableRow>
+
     </TableLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
